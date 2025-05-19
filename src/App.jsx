@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import PostsPage from "./components/PostsPage"
+// importazione del contesto
 import PostsContext from "./contexts/PostsContext"
 
 function App() {
-
+  // definizione dell'array dei post
   const postsArray = [
     { id: 1, title: 'React Basis', content: 'React apps are made out of components. A component is a piece of the UI (user interface) that has its own logic and appearance. A component can be as small as a button, or as large as an entire page.', category: 'FrontEnd' },
     { id: 2, title: 'What is Express.js?', content: 'Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.', category: 'Backend' },

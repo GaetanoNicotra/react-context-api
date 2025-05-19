@@ -1,4 +1,5 @@
 import React from 'react'
+import PostsList from './PostsList';
 
 const PostsPage = () => {
     return (
@@ -7,6 +8,9 @@ const PostsPage = () => {
                 <header>
                     <h1>React Context API</h1>
                 </header>
+                <main>
+                    <PostsList />
+                </main>
             </div>
         </>
     )

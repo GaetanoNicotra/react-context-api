@@ -1,11 +1,16 @@
-import { useState } from 'react'
-import PostsList from './components/PostsList'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import PostsList from "./components/PostsList"
+
 function App() {
 
 
   return (
     <>
-      <PostsList />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PostsList />}>  </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

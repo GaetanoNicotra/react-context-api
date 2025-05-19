@@ -2,3 +2,19 @@ header {
     background-color: rgba(125, 69, 199, 0.897);
     padding: 20px
 }
+
+.card {
+    border: 1.8px solid rgb(0, 0, 0);
+}
+
+p {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 25px;
+}

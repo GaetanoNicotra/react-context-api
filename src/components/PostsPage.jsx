@@ -4,14 +4,8 @@ import PostsList from './PostsList';
 const PostsPage = () => {
     return (
         <>
-            <div className="container">
-                <header>
-                    <h1>React Context API</h1>
-                </header>
-                <main>
-                    <PostsList />
-                </main>
-            </div>
+            <h1 className='mb-5 mt-5'>React Context API</h1>
+            <PostsList />
         </>
     )
 }

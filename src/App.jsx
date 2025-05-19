@@ -1,17 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import PostsList from "./components/PostsList"
 import PostsPage from "./components/PostsPage"
-
+import PostsContext from "./contexts/PostsContext"
 function App() {
 
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<PostsPage />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <PostsContext.Provider value={{}}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<PostsPage />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </PostsContext.Provider>
     </>
   )
 }

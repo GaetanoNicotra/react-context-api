@@ -11,10 +11,12 @@ const PostsList = () => {
     let count = useContext(PostsContext);
 
     return (
-        <div className="container">
-            <h1 className='mb-5 mt-5 text-center'>React Context API</h1>
-            <div className="row">
-                <div className="col-6">
+        <>
+            <header>
+                <h1 className='text-center text-white'>React Context API</h1>
+            </header>
+            <div className="container mt-5">
+                <div className="row">
                     {/* utilizzo il map per generare ciascun post a partire dall'array */}
                     {count.map((post) => {
                         return (
@@ -23,7 +25,7 @@ const PostsList = () => {
                     })}
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import PostsPage from "./components/PostsPage"
 // importazione del contesto
 import PostsContext from "./contexts/PostsContext"
-
+import { AlertProvider } from './contexts/AlertContext'
 function App() {
   // definizione dell'array dei post
   const postsArray = [
@@ -15,11 +15,13 @@ function App() {
   return (
     <>
       <PostsContext.Provider value={postsArray}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<PostsPage />}></Route>
-          </Routes>
-        </BrowserRouter>
+        <AlertProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<PostsPage />}></Route>
+            </Routes>
+          </BrowserRouter>
+        </AlertProvider>
       </PostsContext.Provider>
     </>
   )
